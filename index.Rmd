@@ -1,0 +1,29 @@
+---
+title: "lecture18 exercise"
+author: "Kevin"
+date: "11/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r include=FALSE}
+library("knitr")
+source("nameexercise.R")
+```
+
+## Female Names Data Set Information 
+
+According to the female name data set the most popular name in 2013 `r most_pop_name`. 
+
+There also seems to be `r kevin_2013` females with the name Kevin in 2013
+
+In 2013 `r laura_1995` million females were named Laura 
+
+
+This is a table of the most popular name
+```{r, echo=FALSE}
+kable(names_2013)
+```
